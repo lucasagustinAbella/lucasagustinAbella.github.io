@@ -1,0 +1,66 @@
+/* Estilo personalizado para el navbar */
+.navbar-custom {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff !important; /* Color del texto blanco */
+}
+
+/* Estilo personalizado para los enlaces del navbar */
+.navbar-custom .nav-link {
+    color: #fff !important; /* Color del texto blanco */
+}
+
+/* Estilo personalizado para el enlace activo en el navbar */
+.navbar-custom .nav-item.active .nav-link {
+    color: #fff !important; /* Color del texto blanco */
+}
+
+/* Cambiar color del botón de hamburguesa en pantallas pequeñas */
+.navbar-toggler-icon {
+    background-color: #fff; /* Color del botón blanco */
+}
+
+/* Cambiar color del botón de hamburguesa cuando está activo */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: #fff; /* Color del botón blanco */
+}
+.nav-link {
+    font-weight: 600;
+}
+
+.d-item{
+    height: 750px;
+}
+
+.d-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,500&display=swap');
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif; 
+}

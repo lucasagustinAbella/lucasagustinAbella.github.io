@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mi Proyecto con Bootstrap</title>
+    <link href="stelsheet" rel="styles.css">
+</head>
+<body>
+<!--nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+            Mi Empresa
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formulario.html">Suscribite</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catalogo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="hombre.html">Hombre</a>
+                        <a class="dropdown-item" href="mujer.html">Mujer</a>
+                        <a class="dropdown-item" href="jubilado.html">Jubilados</a>
+                        <a class="dropdown-item" href="niño.html">Niños</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Otros Servicios</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
