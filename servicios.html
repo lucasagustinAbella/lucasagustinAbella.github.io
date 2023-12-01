@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <!--iconos boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Mi Proyecto con Bootstrap</title>
+    <title>Optica Lennon</title>
     <link rel="stylesheet" href="servicios.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!--nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="img/logo1.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
+            <img src="img/logo2.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,6 +43,7 @@
                         <a class="dropdown-item" href="mujer.html">Mujer</a>
                         <a class="dropdown-item" href="jubilado.html">Jubilados</a>
                         <a class="dropdown-item" href="niño.html">Niños</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="servicios.html">Servicios</a>
@@ -53,19 +53,53 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+            <!--modal-->
+            <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;"
+                data-toggle="modal" data-target="#loginModal">
+                Iniciar Sesión
+            </button>
+            <!-- Modal de Inicio de Sesión -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contenido del formulario de inicio de sesión -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="username">Usuario:</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Ingrese su usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Ingrese su contraseña">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
     <div class="container">
-        <h2 class="text-center mb-5">Nuestros Servicios</h2>
-
-        <!-- Primera sección de servicios -->
+        <h1 class="text-center mb-5">Nuestros Servicios</h1>
+<!-- Primera sección de servicios -->
         <div class="row align-items-center">
             <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="img/op.jpg" class="img-fluid" alt="Image">
+                <img src="img/img3.jpg" class="img-fluid" alt="Image">
             </div>
             <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
-                <h4 class="display-3">Nuestra marca</h4>
+                <h4>Nuestra marca</h4>
                 <p class="text-justify">La misión de nuestra organización se ha mantenido sustancialmente en el mismo
                     rumbo que sus miembros fundadores imaginaron hace más de un siglo. La importancia del campo, el
                     genio de los fundadores de la OSA y la notable dedicación de quienes le siguieron permitieron que la
@@ -76,7 +110,7 @@
         <!-- Segunda sección de servicios -->
         <div class="row align-items-center">
             <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
-                <h4 class="display-3">Sociedad</h4>
+                <h4>Sociedad</h4>
                 <p class="text-justify">Nuestra sociedad tiene una historia de descubrimiento e innovación. Desde 1916,
                     la sociedad ha sido la principal defensora mundial de la óptica y la fotónica, uniendo y educando a
                     científicos, ingenieros, educadores, técnicos y líderes empresariales de todo el mundo. Actualmente,
@@ -95,7 +129,7 @@
                 <img src="img/op3.jpg" class="img-fluid" alt="Image">
             </div>
             <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
-                <h4 class="display-3">Recursos para miembros de Optica</h4>
+                <h4>Recursos para miembros de Optica</h4>
                 <p class="text-justify">Como miembro de Lennon Optica general, tiene acceso a recursos exclusivos para
                     administrar su cuenta, mantenerse actualizado sobre información y anuncios importantes, conectarse
                     con un
@@ -103,14 +137,43 @@
             </div>
         </div>
     </div>
-
+    <!--acordeon-->
+    <div class="accordion">
+        <h3>Preguntas frecuentes</h3>
+        <div class="accordion-item">
+            <button class="accordion-button">¿De donde son?<span>+</span></button>
+            <div class="accordion-content">
+                <p>Nuestra marca nacio en San Juan y expandiremos nuevos locales en distintas parte del pais.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">¿Como se realiza los envios? <span>+</span></button>
+            <div class="accordion-content">
+                <p>Enviamos el producto que compres a distintas partes del pais por Correo Argentino.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">¿Cuanto tarda en llega el pedido? <span>+</span></button>
+            <div class="accordion-content">
+                <p>Demoramos hasta en 3 dias habiles en despachar. En gemeral la demora se encuntra entre 2 y 7 dias
+                    habiles luego de despachado el pedido.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">¿Puedo combinar distintos modelos en 2x1?<span>+</span></button>
+            <div class="accordion-content">
+                <p>Si, podes elegir los modelos que quieras y el descuento se aplica automaticamente.</p>
+            </div>
+        </div>
+        <!-- Agrega más preguntas y respuestas según sea necesario -->
+    </div>
     <!-- Footer -->
     <footer class="bg-dark text-white mt-5">
         <div class="container">
             <div class="row">
                 <!-- Logo de la Empresa -->
                 <div class="col-md-3">
-                    <img src="img/logo1.png" alt="Logo de la Empresa" class="img-fluid">
+                    <img src="img/logo3.png" alt="Logo de la Empresa" class="img-fluid">
                 </div>
                 <!-- Información de Contacto -->
                 <div class="col-md-6">
@@ -124,16 +187,39 @@
                 <div class="col-md-3">
                     <h6>Nuestras Redes Sociales</h6>
                     <div class="d-flex">
-                    <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png"width="40" height="40" alt="Facebook"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png"width="40" height="40" alt="LinkedIn"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png"width="40" height="40" alt="Twitter"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png"width="40" height="40" alt="Instagram"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png" width="40" height="40"
+                                alt="Facebook"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png" width="40" height="40"
+                                alt="LinkedIn"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png" width="40" height="40"
+                                alt="Twitter"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png" width="40" height="40"
+                                alt="Instagram"></a>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
+        </div>
     </footer>
+    <script>
+        // JavaScript para manejar la funcionalidad del acordeón
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.accordion-button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+
+                    // Alternar la visibilidad del contenido
+                    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+
+                    // Cambiar el signo "+" o "-" del botón
+                    const icon = this.querySelector('span');
+                    icon.textContent = (icon.textContent === '+') ? '-' : '+';
+                });
+            });
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

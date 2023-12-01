@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <!-- Iconos de Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Mi Proyecto con Bootstrap</title>
-    <link rel="stylesheet" href="hombre.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Optica Lennon</title>
+    <link rel="stylesheet" href="niño.css">
 </head>
 <body>
 <!--nav-->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="img/logo1.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
-            
+            <img src="img/logo2.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +32,8 @@
                     <a class="nav-link" href="formulario.html">Suscribite</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Catalogo
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,6 +51,39 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+                <!--modal-->
+    <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;" data-toggle="modal" data-target="#loginModal">
+        Iniciar Sesión
+    </button>
+    <!-- Modal de Inicio de Sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del formulario de inicio de sesión -->
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Usuario:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Ingrese su contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
         </div>
     </nav>
 
@@ -111,7 +144,63 @@
         </div>
     </div>
 </div>
-    
+    <!--testimonios-->
+    <div class="testimonial-section">
+        <!-- Testimonio 1 -->
+        <div class="testimonial">
+            <img src="img/man3.jpg" alt="Persona 1">
+            <h3>Carlos E.</h3>
+            <p>Excelente compra, los lentes llegaron en excelente estado, le quedo bien a mi hijo. Me...</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <img src="img/anc2.jpg" alt="Persona 2">
+            <h3>Juan G.</h3>
+            <p>super comodos y efectivos. A mi nieta les gusta =)
+                Recomendables!!!</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="testimonial">
+            <img src="img/girl2.jpg" alt="Persona 2">
+            <h3>Mirta L.</h3>
+            <p>Excelente atencion, muy cordiales y atentos en la atencion y consulta, super recomentable!!! y </p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+        <!-- Testimonio 4 -->
+        <div class="testimonial">
+            <img src="img/girl3.jpg" alt="Persona 2">
+            <h3>Daiana G. </h3>
+            <p>Excelente producto y excelente experincia de compra online.</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+            </div>
+        </div>
+    </div>
+
 
  <!-- Footer -->
  <footer class="bg-dark text-white mt-5">
@@ -119,7 +208,7 @@
         <div class="row">
             <!-- Logo de la Empresa -->
             <div class="col-md-3">
-                <img src="img/logo1.png" alt="Logo de la Empresa" class="img-fluid">
+                <img src="img/logo3.png" alt="Logo de la Empresa" class="img-fluid">
             </div>
             <!-- Información de Contacto -->
             <div class="col-md-6">

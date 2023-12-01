@@ -1,0 +1,95 @@
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+/*footer*/
+
+        /* Estilos generales para la página */
+        body {
+            margin: 0;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Estilos para el logo */
+        footer img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para las redes sociales */
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Cambiar el color de las redes sociales al pasar el cursor */
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        /* Animación de aparición de los elementos */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Aplicar animación al footer */
+        footer * {
+            animation: fadeIn 2s ease-out;
+        }
+        /* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200;1,300;1,500&display=swap');
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif; 
+}
+
+a {
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: black;
+}

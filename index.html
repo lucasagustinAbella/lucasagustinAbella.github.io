@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <!--iconos boostrap-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Mi Proyecto con Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Optica Lennon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -19,7 +20,7 @@
     <!--nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="img/logo1.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
+            <img src="img/logo2.png" width="80" height="60" class="d-inline-block align-top" alt="Logo">
         </a>
         <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,97 +54,115 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+            <!--modal-->
+            <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;"
+                data-toggle="modal" data-target="#loginModal">
+                Iniciar Sesión
+            </button>
+            <!-- Modal de Inicio de Sesión -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contenido del formulario de inicio de sesión -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="username">Usuario:</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Ingrese su usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Ingrese su contraseña">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
-
-    <!--modal-->
-    <button type="button" class="btn btn-primary my-1" data-toggle="modal" data-target="#loginModal">
-        Iniciar Sesión
-    </button>
-    <!-- Modal de Inicio de Sesión -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- Contenido del formulario de inicio de sesión -->
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Usuario:</label>
-                            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña:</label>
-                            <input type="password" class="form-control" id="password"
-                                placeholder="Ingrese su contraseña">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Carrusel de Imágenes -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Primera Imagen -->
-            <div class="carousel-item active d-item">
-                <img src="img/mujer.jpg" class="d-block w-100 d-img" alt="Primera Imagen">
+    <div class="container">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/oferta1.gif" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/oferta2.gif" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/oferta3.gif" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/oferta4.png" class="d-block w-100" alt="Imagen 4">
+                </div>
             </div>
-
-            <!-- Segunda Imagen -->
-            <div class="carousel-item d-item">
-                <img src="img/hombre.jpg" class="d-block w-100 d-img" alt="Segunda Imagen">
-            </div>
-
-            <!-- Tercera Imagen -->
-            <div class="carousel-item d-item">
-                <img src="img/jubilados.jpg" class="d-block w-100 d-img" alt="Tercera Imagen">
-            </div>
-            <!--cuarta imagen-->
-            <div class="carousel-item d-item">
-                <img src="img/kid.jpg" class="d-block w-100 d-img" alt="Segunda Imagen">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-
-        <!-- Controles del Carrusel -->
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
     </div>
-
-</div>
     <!--Sobre nosotros-->
     <div class="container mt-5">
-        <div class="row">
-            <!-- Imagen -->
-            <div class="col-md-6">
-                <img src="img/op.jpg" class="img-fluid" alt="Óptica">
+        <div class="row align-items-center">
+            <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
+                <img src="img/op.jpg" class="img-fluid" alt="Image">
             </div>
-            <!-- Texto al Costado -->
-            <div class="col-md-6">
-                <h2>Nuestra Óptica</h2>
-                <p>
-                    Bienvenido a Nuestra Óptica, donde nos dedicamos a proporcionar servicios de cuidado visual de alta
-                    calidad.
-                    Ofrecemos una amplia gama de productos y servicios, incluyendo exámenes de la vista, lentes de
-                    contacto,
-                    monturas de gafas de las mejores marcas y asesoramiento experto para mantener y mejorar la salud de
-                    tus ojos.
-                </p>
+            <div class="col-ms-12 col-md-6 col-lg-6 col-xl-6">
+                <h4>Nuestra Optica Lennon</h4>
+                <p class="text-justify">Bienvenido a Nuestra Óptica, donde nos dedicamos a proporcionar servicios de
+                    cuidado visual de alta calidad. Ofrecemos una amplia gama de productos y servicios, incluyendo
+                    exámenes de la vista, lentes de contacto, monturas de gafas de las mejores marcas y asesoramiento
+                    experto para mantener y mejorar la salud de tus ojos.</p>
             </div>
+        </div>
+    </div>
+    <!--ofertas-->
+    <div class="special-offers">
+        <!-- Oferta 1 -->
+        <div class="offer">
+            <h2>Descuento del 20%</h2>
+            <p>Compra ahora y obtén un 20% de descuento en tu primer pedido. ¡No te lo pierdas!</p>
+            <a href="#comprar" style="color: #007bff; text-decoration: none;">Ver Detalles</a>
+        </div>
+
+        <!-- Oferta 2 -->
+        <div class="offer">
+            <h2>Envío Gratuito</h2>
+            <p>Realiza una compra de más de $30.000 y te enviaremos tus productos de forma gratuita. ¡Aprovecha esta
+                oferta!</p>
+            <a href="#comprar" style="color: #007bff; text-decoration: none;">Ver Detalles</a>
+        </div>
+
+        <!-- Oferta 3 -->
+        <div class="offer">
+            <h2>Oferta Especial</h2>
+            <p>Compra dos productos y llévate el tercero con un 50% de descuento. ¡No te lo pierdas esta gran oferta!
+            </p>
+            <a href="#comprar" style="color: #007bff; text-decoration: none;">Ver Detalles</a>
+        </div>
+
+        <!-- Oferta 4 -->
+        <div class="offer">
+            <h2>Regalo con Compra</h2>
+            <p>Realiza una compra de más de $50.000 y recibe un regalo sorpresa. ¡Aprovéchalo ahora!</p>
+            <a href="#comprar" style="color: #007bff; text-decoration: none;">Ver Detalles</a>
         </div>
     </div>
 
@@ -153,11 +172,12 @@
             <div class="row">
                 <!-- Logo de la Empresa -->
                 <div class="col-md-3">
-                    <img src="img/logo1.png" alt="Logo de la Empresa" class="img-fluid">
+                    <img src="img/logo3.png" alt="Logo de la Empresa" class="img-fluid">
+                    <a class="nav-link" href="index.html"></a>
                 </div>
                 <!-- Información de Contacto -->
                 <div class="col-md-6">
-                    <h4>Contacto</h4>
+                    <h3>Contacto</h3>
                     <p>Dirección: Calle Fulanito 123 (S), Ciudad Rivadavia</p>
                     <p>Correo Electrónico: info@tuoptica.com</p>
                     <p>Teléfono: +123 456 789</p>
@@ -167,10 +187,15 @@
                 <div class="col-md-3">
                     <h6>Nuestras Redes Sociales</h6>
                     <div class="d-flex">
-                    <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png"width="40" height="40" alt="Facebook"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png"width="40" height="40" alt="LinkedIn"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png"width="40" height="40" alt="Twitter"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png"width="40" height="40" alt="Instagram"></a>
+
+                        <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png" width="40" height="40"
+                                alt="Facebook"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png" width="40" height="40"
+                                alt="LinkedIn"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png" width="40" height="40"
+                                alt="Twitter"></a>
+                        <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png" width="40" height="40"
+                                alt="Instagram"></a>
                     </div>
                 </div>
             </div>

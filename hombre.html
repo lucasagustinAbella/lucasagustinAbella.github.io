@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo2.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
     <!-- Iconos de Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Mi Proyecto con Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Optica Lennon</title>
     <link rel="stylesheet" href="hombre.css">
-    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<!--nav-->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">
-            <img src="img/logo1.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
-            
+            <img src="img/logo2.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +34,8 @@
                     <a class="nav-link" href="formulario.html">Suscribite</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Catalogo
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,6 +53,41 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
             </form>
+            <!--modal-->
+            <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;"
+                data-toggle="modal" data-target="#loginModal">
+                Iniciar Sesión
+            </button>
+            <!-- Modal de Inicio de Sesión -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contenido del formulario de inicio de sesión -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="username">Usuario:</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Ingrese su usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Ingrese su contraseña">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -66,88 +103,149 @@
         </div>
     </div>
 
-<!--catalogo card-->
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img src="img/h1.png" class="card-img-top" alt="Producto 1">
-                <div class="card-body">
-                    <h5 class="card-title">UOMO GRAY</h5>
-                    <p class="card-text">OFERTA $29.400</p>
-                    <button class="btn btn-primary">Añadir al Carrito</button>
+    <!--catalogo card-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/h1.png" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">UOMO GRAY</h5>
+                        <p class="card-text">OFERTA $29.400</p>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img src="img/h2.png" class="card-img-top" alt="Producto 2">
-                <div class="card-body">
-                    <h5 class="card-title">RUSTY INDIAN</h5>
-                    <p class="card-text">CONTADO $60.500</p>
-                    <button class="btn btn-primary">Añadir al Carrito</button>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/h2.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">RUSTY INDIAN</h5>
+                        <p class="card-text">CONTADO $60.500</p>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img src="img/h3.png" class="card-img-top" alt="Producto 3">
-                <div class="card-body">
-                    <h5 class="card-title">RAY-BAN AVIATOR</h5>
-                    <p class="card-text">PROMOCION $29.999</p>
-                    <button class="btn btn-primary">Añadir al Carrito</button>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/h3.png" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">RAY-BAN AVIATOR</h5>
+                        <p class="card-text">PROMOCION $29.999</p>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <img src="img/h4.png" class="card-img-top" alt="Producto 4">
-                <div class="card-body">
-                    <h5 class="card-title">VULK YESTER</h5>
-                    <p class="card-text">OFERTA $50.999</p>
-                    <button class="btn btn-primary">Añadir al Carrito</button>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="img/h4.png" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">VULK YESTER</h5>
+                        <p class="card-text">OFERTA $50.999</p>
+                        <button class="btn btn-primary">Añadir al Carrito</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    
 
- <!-- Footer -->
-    <footer class="bg-dark text-white mt-5">
-        
-        <div class="container">
-            <div class="row">
-                <!-- Logo de la Empresa -->
-                <div class="col-3">
-                    <img src="img/logo1.png" alt="Logo de la Empresa" class="img-fluid">
-                </div>
-                <!-- Información de Contacto -->
-                <div class="col-md-6">
-                    <h4>Contacto</h4>
-                    <p>Dirección: Calle Fulanito 123 (S), Ciudad Rivadavia</p>
-                    <p>Correo Electrónico: info@tuoptica.com</p>
-                    <p>Teléfono: +123 456 789</p>
-                    <p>WhatsApp: +123 456 789</p>
-                </div>
-                <!-- Redes Sociales -->
-                <div class="col-md-3">
-                    <h6>Nuestras Redes Sociales</h6>
-                    <div class="d-flex">
-                    <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png"width="40" height="40" alt="Facebook"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png"width="40" height="40" alt="LinkedIn"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png"width="40" height="40" alt="Twitter"></a>
-                    <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png"width="40" height="40" alt="Instagram"></a>
-                    </div>
-                </div>
-                </div>
+    <!--testimonios-->
+    <div class="testimonial-section">
+        <!-- Testimonio 1 -->
+        <div class="testimonial">
+            <img src="img/man1.jpg" alt="Persona 1">
+            <h3>Carlos E.</h3>
+            <p>Excelente compra, los lentes llegaron en excelente estado, tal cual estaban en las fotos. Me...</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+
             </div>
         </div>
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <img src="img/man2.jpg" alt="Persona 2">
+            <h3>Juan G.</h3>
+            <p>super comodos y efectivos. Me gusta sacarmelos
+                Recomendables!!!</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <img src="img/anc1.jpg" alt="Persona 2">
+            <h3>Mirta L.</h3>
+            <p>Excelente atencion, muy cordiales y atentos en la atencion y consulta, super recomentable!!! y...</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="testimonial">
+            <img src="img/girl1.jpg" alt="Persona 2">
+            <h3>Daiana G. </h3>
+            <p>Excelente producto y excelente experincia de compra online.</p>
+            <div class="stars">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/estrella.png" alt="Estrella">
+                <img src="img/mediastar.png" alt="Estrella">
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white mt-5">
+
+            <div class="container">
+                <div class="row">
+                    <!-- Logo de la Empresa -->
+                    <div class="col-3">
+                        <img src="img/logo3.png" alt="Logo de la Empresa" class="img-fluid">
+                    </div>
+                    <!-- Información de Contacto -->
+                    <div class="col-md-6">
+                        <h4>Contacto</h4>
+                        <p>Dirección: Calle Fulanito 123 (S), Ciudad Rivadavia</p>
+                        <p>Correo Electrónico: info@tuoptica.com</p>
+                        <p>Teléfono: +123 456 789</p>
+                        <p>WhatsApp: +123 456 789</p>
+                    </div>
+                    <!-- Redes Sociales -->
+                    <div class="col-md-3">
+                        <h6>Nuestras Redes Sociales</h6>
+                        <div class="d-flex">
+                            <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png" width="40" height="40"
+                                    alt="Facebook"></a>
+                            <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png" width="40" height="40"
+                                    alt="LinkedIn"></a>
+                            <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png" width="40" height="40"
+                                    alt="Twitter"></a>
+                            <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png" width="40" height="40"
+                                    alt="Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
