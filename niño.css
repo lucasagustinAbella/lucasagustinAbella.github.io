@@ -116,8 +116,9 @@ footer * {
 }
 /* Botenes */
 .navbar {
-  background-color: #fd7e14c9 !important;
+  background-color: #073a71de !important;
 }
+
 .btn-primary {
   background-color: #fd7e14c9;
   border-color: black;

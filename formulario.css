@@ -4,6 +4,9 @@ h2{
 p{
     text-align: center;
 }
+.navbar {
+    background-color: #073a71de !important;
+  }
 /*footer*/
 
         /* Estilos generales para la página */

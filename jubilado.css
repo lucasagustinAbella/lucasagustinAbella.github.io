@@ -115,10 +115,10 @@ footer * {
   animation: fadeIn 1s ease-out;
 }
 .navbar {
-  background-color: #3599dc !important;
+  background-color: #073a71de !important;
 }
 .btn-primary {
-  background-color: #3599dc;
+  background-color: #073a71de;
   border-color: black;
 }
 /* Fuentes */

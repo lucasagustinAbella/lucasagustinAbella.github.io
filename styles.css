@@ -1,11 +1,7 @@
 /* Estilo personalizado para el navbar */
-.navbar-custom {
-    background-color: #007bff;
-    /* Color de fondo azul */
-    color: #fff !important;
-    /* Color del texto blanco */
-}
-
+.navbar {
+    background-color: #073a71de !important;
+  }
 /* Estilo personalizado para los enlaces del navbar */
 .navbar-custom .nav-link {
     color: #fff !important;

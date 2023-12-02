@@ -115,8 +115,9 @@ footer * {
   animation: fadeIn 1s ease-out;
 }
 .navbar {
-  background-color: #dc423580 !important;
+  background-color: #073a71de !important;
 }
+
 .btn-primary {
   background-color: #dc423580;
   border-color: black;

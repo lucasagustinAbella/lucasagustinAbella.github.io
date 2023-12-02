@@ -19,7 +19,7 @@ img {
 }
 
 .accordion-button {
-    background-color: #007bff;
+    background-color: #073a71de;
     color: #fff;
     cursor: pointer;
     padding: 15px;
@@ -34,7 +34,7 @@ img {
 }
 
 .accordion-button:hover {
-    background-color: #0056b3;
+    background-color: #073a71de;
 }
 
 .accordion-content {
@@ -48,7 +48,7 @@ img {
 }
 
 .accordion-item.active .accordion-button {
-    background-color: #0056b3;
+    background-color: #073a71de;
 }
 
 .accordion-item.active .accordion-content {
@@ -100,7 +100,7 @@ footer img {
 
 /* Cambiar el color de las redes sociales al pasar el cursor */
 .social-icons a:hover {
-    color: #007bff;
+    color: #073a71de;
 }
 
 /* Animación de aparición de los elementos */
@@ -155,3 +155,6 @@ h1 {
 a {
     font-weight: bold;
 }
+.navbar {
+    background-color: #073a71de !important;
+  }

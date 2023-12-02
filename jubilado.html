@@ -14,78 +14,80 @@
     <link rel="stylesheet" href="jubilado.css">
 </head>
 <body>
-<!--nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo2.png" width="60" height="60" class="d-inline-block align-top" alt="Logo">
-        </a>
-        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="formulario.html">Suscribite</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Catalogo
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="hombre.html">Hombre</a>
-                        <a class="dropdown-item" href="mujer.html">Mujer</a>
-                        <a class="dropdown-item" href="jubilado.html">Jubilados</a>
-                        <a class="dropdown-item" href="niño.html">Niños</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-                <!--modal-->
-    <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;" data-toggle="modal" data-target="#loginModal">
-        Iniciar Sesión
+ <!--nav-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo2.png" width="130" height="60" class="d-inline-block align-top" alt="Logo">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Modal de Inicio de Sesión -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="formulario.html">Suscribite</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                    Catalogo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="hombre.html">Hombre</a>
+                    <a class="dropdown-item" href="mujer.html">Mujer</a>
+                    <a class="dropdown-item" href="jubilado.html">Jubilados</a>
+                    <a class="dropdown-item" href="niño.html">Niños</a>
                 </div>
-                <div class="modal-body">
-                    <!-- Contenido del formulario de inicio de sesión -->
-                    <form>
-                        <div class="form-group">
-                            <label for="username">Usuario:</label>
-                            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Contraseña:</label>
-                            <input type="password" class="form-control" id="password"
-                                placeholder="Ingrese su contraseña">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                    </form>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;" href="servicios.html">Servicios</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <!--modal-->
+        <button type="button" class="btn btn-outline-light my-2 my-sm-0" style="margin-left: 10px;"
+            data-toggle="modal" data-target="#loginModal">
+            Iniciar Sesión
+        </button>
+        <!-- Modal de Inicio de Sesión -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del formulario de inicio de sesión -->
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Usuario:</label>
+                                <input type="text" class="form-control" id="username"
+                                    placeholder="Ingrese su usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Ingrese su contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
-    </nav>
+</nav>
     <!--carrucel-->
     <div class="container mt-5">
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -126,7 +128,7 @@
                 <img src="img/a3.png" class="card-img-top" alt="Producto 3">
                 <div class="card-body">
                     <h5 class="card-title">WINK PORTLAND</h5>
-                    <p class="card-text">21.800</p>
+                    <p class="card-text">$21.800</p>
                     <button class="btn btn-primary">Añadir al Carrito</button>
                 </div>
             </div>
@@ -169,6 +171,7 @@
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
+            <img src="img/estrella.png" alt="Estrella">
             <img src="img/mediastar.png" alt="Estrella">
         </div>
     </div>
@@ -182,6 +185,7 @@
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
+            <img src="img/estrella.png" alt="Estrella">
             <img src="img/mediastar.png" alt="Estrella">
         </div>
     </div>
@@ -192,6 +196,7 @@
         <h3>Daiana G. </h3>
         <p>Excelente producto y excelente experincia de compra online.</p>
         <div class="stars">
+            <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
             <img src="img/estrella.png" alt="Estrella">
@@ -222,7 +227,7 @@
             <div class="col-md-3">
                 <h6>Nuestras Redes Sociales</h6>
                 <div class="d-flex">
-                <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png"width="40" height="40" alt="Facebook"></a>
+                <a href="#" target="_blank" class="mr-3"><img src="img/facebook.png" width="40" height="40" alt="Facebook"></a>
                 <a href="#" target="_blank" class="mr-3"><img src="img/linkedin.png"width="40" height="40" alt="LinkedIn"></a>
                 <a href="#" target="_blank" class="mr-3"><img src="img/twitter.png"width="40" height="40" alt="Twitter"></a>
                 <a href="#" target="_blank" class="mr-3"><img src="img/instagram.png"width="40" height="40" alt="Instagram"></a>
